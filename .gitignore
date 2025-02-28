@@ -1,0 +1,7 @@
+__pycache__
+
+prueba-*
+
+.pypirc
+
+.mypy_cache

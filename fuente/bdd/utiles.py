@@ -15,6 +15,8 @@ def formatearValorParaSQL(valor: Any, html : bool = False) -> str:
         return "1" if valor else "0"
     if isinstance(valor, (int, float)):
         return str(valor)
+    if isinstance(valor, (list, tuple)):
+        return f"'[{','.join(f"\"{str(v)}\"" for v in valor)}]'"
     if isinstance(valor, Decimal):
         return str(valor.to_eng_string())
     if isinstance(valor, (date, datetime, time)):

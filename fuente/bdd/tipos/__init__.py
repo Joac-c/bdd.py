@@ -1,4 +1,4 @@
-from typing import Protocol, runtime_checkable, Self, TypeAlias, Optional, Any, AnyStr, Unpack
+from typing import Protocol, runtime_checkable, Self, TypeAlias, Optional, Any, AnyStr, Unpack,Union
 from decimal import Decimal
 from datetime import datetime,date,time,timedelta,timezone
 from re import Match

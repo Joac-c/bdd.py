@@ -100,15 +100,16 @@ class Tabla(type):
             'tinytext': str,
             'boolean': bool,
             'bool': bool,
-            'tinyint(1)': bool,
-            'blob': bytes,
-            'mediumblob': bytes,
-            'longblob': bytes,
-            'tinyblob': bytes,
-            'binary': bytes,
-            'varbinary': bytes,
-            'json': dict,
+            'tinyint(1)': Union[bool,int],
+            'blob': Union[bytes,bytearray],
+            'mediumblob': Union[bytes,bytearray],
+            'longblob': Union[bytes,bytearray],
+            'tinyblob': Union[bytes,bytearray],
+            'binary': Union[bytes,bytearray],
+            'varbinary': Union[bytes,bytearray],
+            'json': Union[dict,list,tuple],
         }
+
         
         if tipo_base == 'enum':
             valores_enum: list[Any] = findall(r"'([^']*)'", tipo_sql)

@@ -1,4 +1,4 @@
-from enum import Enum, EnumType as _EnumMeta, EnumDict as _EnumDict
+from enum import Enum, EnumType as _EnumMeta, _EnumDict as _EnumDict
 
 class EnumSQLMeta(_EnumMeta):
     """

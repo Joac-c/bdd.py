@@ -3,11 +3,11 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "chastack-bdd"
+name = "bdd"
 version = "0.1.0"
 authors = [
   { name="Hernán A.T.N.", email="herni@cajadeideas.ar" },
-  { name="Joaquín Correa", email="correajoaquin7@gmail.com" },
+  { name="Joaquín Correa" },
   { name="Camila M.T.N.", email="cmteszkiewicz@gmail.com" },
 ]
 description = "Abstracción de Bases de Datos en Python y constructor de modelos."
@@ -21,15 +21,6 @@ classifiers = [
 
 dependencies = [
     'sobrecargar',
-    'solteron',
-    "mysql-connector-python==8.3.0",
-]
-
-[tool.setuptools]
-packages = [
-  "chastack_bdd",
-  "chastack_bdd.errores",
-  "chastack_bdd.tipos",
 ]
 
 [project.urls]

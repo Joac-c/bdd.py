@@ -1,7 +1,7 @@
-from chastack_bdd.tipos import *
-from chastack_bdd.utiles import *
-from chastack_bdd.bdd import ProtocoloBaseDeDatos
-from chastack_bdd.registro import Registro
+from bdd.tipos import *
+from bdd.utiles import *
+from bdd.bdd import ProtocoloBaseDeDatos
+from bdd.registro import Registro
 
 class Tabla(type):
     def __new__(mcs, nombre, bases, atributos):
@@ -100,16 +100,15 @@ class Tabla(type):
             'tinytext': str,
             'boolean': bool,
             'bool': bool,
-            'tinyint(1)': Union[bool,int],
-            'blob': Union[bytes,bytearray],
-            'mediumblob': Union[bytes,bytearray],
-            'longblob': Union[bytes,bytearray],
-            'tinyblob': Union[bytes,bytearray],
-            'binary': Union[bytes,bytearray],
-            'varbinary': Union[bytes,bytearray],
-            'json': Union[dict,list,tuple],
+            'tinyint(1)': bool,
+            'blob': bytes,
+            'mediumblob': bytes,
+            'longblob': bytes,
+            'tinyblob': bytes,
+            'binary': bytes,
+            'varbinary': bytes,
+            'json': dict,
         }
-
         
         if tipo_base == 'enum':
             valores_enum: list[Any] = findall(r"'([^']*)'", tipo_sql)

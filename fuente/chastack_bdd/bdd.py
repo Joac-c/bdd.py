@@ -1,6 +1,6 @@
-from bdd.tipos import *
-from bdd.errores import *
-from bdd.utiles import *
+from chastack_bdd.tipos import *
+from chastack_bdd.errores import *
+from chastack_bdd.utiles import *
 
 @runtime_checkable
 class ProtocoloBaseDeDatos(Protocol):

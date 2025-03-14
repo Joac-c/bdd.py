@@ -27,9 +27,9 @@ dependencies = [
 
 [tool.setuptools]
 packages = [
-  "bdd",
-  "bdd.errores",
-  "bdd.tipos",
+  "chastack_bdd",
+  "chastack_bdd.errores",
+  "chastack_bdd.tipos",
 ]
 
 [project.urls]

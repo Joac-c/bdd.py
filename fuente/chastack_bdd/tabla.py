@@ -1,7 +1,7 @@
-from bdd.tipos import *
-from bdd.utiles import *
-from bdd.bdd import ProtocoloBaseDeDatos
-from bdd.registro import Registro
+from chastack_bdd.tipos import *
+from chastack_bdd.utiles import *
+from chastack_bdd.bdd import ProtocoloBaseDeDatos
+from chastack_bdd.registro import Registro
 
 class Tabla(type):
     def __new__(mcs, nombre, bases, atributos):

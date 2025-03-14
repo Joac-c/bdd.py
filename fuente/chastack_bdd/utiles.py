@@ -1,5 +1,5 @@
 from json import dumps
-from bdd.tipos import *
+from chastack_bdd.tipos import *
 
 def formatearValorParaSQL(valor: Any, html : bool = False) -> str:
     """

@@ -12,12 +12,12 @@ Autores:
  - Joaquín C. | correajoaquin7@gmail.com
 """
 
-from bdd.tipos import *
-from bdd.errores import *
-from bdd.utiles import *
-from bdd.bdd import *
-from bdd.tabla import *
-from bdd.registro import *
+from chastack_bdd.tipos import *
+from chastack_bdd.errores import *
+from chastack_bdd.utiles import *
+from chastack_bdd.bdd import *
+from chastack_bdd.tabla import *
+from chastack_bdd.registro import *
 
 if __name__ == '__main__':
     print(__doc__)

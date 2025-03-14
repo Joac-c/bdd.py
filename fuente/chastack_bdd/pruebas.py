@@ -1,7 +1,7 @@
-from bdd.tipos import *
-from bdd.utiles import *
-from bdd.tabla import Tabla  
-from bdd.registro import Registro, BaseDeDatos_MySQL
+from chastack_bdd.tipos import *
+from chastack_bdd.utiles import *
+from chastack_bdd.tabla import Tabla  
+from chastack_bdd.registro import Registro, BaseDeDatos_MySQL
 
 class Discos(metaclass=Tabla):
     def devolverArtista(self):

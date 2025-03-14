@@ -3,7 +3,7 @@ from decimal import Decimal
 from datetime import datetime,date,time,timedelta,timezone
 from re import Match
 
-from bdd.tipos.enum_sql import *
+from chastack_bdd.tipos.enum_sql import *
 
 ### BDD
 Resultado : TypeAlias = dict[str,Any]
